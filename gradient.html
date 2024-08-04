@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        fieldset{
+            width: 100%;
+         background: linear-gradient(45deg, rgb(211, 151, 151),rgb(145, 145, 202));
+        }
+        [title="name"]{
+           width: 80%;
+           padding-top: 1%;
+font-size: larger;
+      }
+      [title ~="clas"]{
+        width: 80%;
+        padding-top: 1%;
+        font-size: larger;
+        color:rgb(211, 151, 151);
+      }
+     [title ^="head"]{
+        padding-top: 1%;
+        width: 80%;
+        font-size: larger;
+     }
+     [title $="h"]{
+        padding-top: 1%;
+        width: 80%;
+        font-size: larger;
+     }
+    [title="jk"]{
+        font-size:xx-large;
+    }
+    .sub{
+        margin-top: 1%;
+        width:10%;
+        font-size:xx-large;
+        margin-left: 20%;
+    }
+   
+    </style>
+</head>
+<body>
+    <fieldset>
+        
+            <form>
+         <h1>First name:</h1>
+         <div><input  type="text" title="name"  placeholder="First Name"><br></div>
+        <h1>Email Adress:</h1> 
+         <input type="email" placeholder="E-Mail" title="clas start"><br>
+         <h1>Profile photo</h1>
+         <input type="file" title="cls"><br>
+         
+            <h1>Gender</h1>
+            <input type="radio" name="value" value="cl" title="jk">M 
+           <input type="radio" name="value" value="ca" title="jk">F<br>
+         
+           <input type="checkbox"> Show my gender on my profile
+          
+          <h1>Date of Birthday</h1> 
+
+           <input type="date" title="head"><br>
+           <h1>Age</h1>
+           <input type="text"  title="vh" placeholder="Age"><br>
+           <h1>Favourite color </h1>
+           <input type="color"><br>
+           <input type="submit" class="sub">
+             
+            </form>
+        
+    </fieldset>
+   
+
+</body>
+</html>
